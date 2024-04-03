@@ -394,18 +394,92 @@ Strict comparison (===) is used in swap situations.
 It is necessary for the values to match in type.
 Merely having operands of the same type allows for a strict comparison to hold.
 
+Creating Strings in JavaScript
 
+String Creation
+• Strings can be created as primitives, from string literals, or as objects using the String() constructor.
+• String literals can be specified using single or double quotes, or the backtick character.
+• Strings can also be treated as array-like objects, where individual characters correspond to a numerical index.
 
+Comparing Strings
+• In C, the strcmp() function is used for comparing strings.
+• In JavaScript, the less-than and greater-than operators are used.
+• The localeCompare() method inherited by String instances is used for similar results.
 
+String Primitives and String Objects
+• JavaScript distinguishes between String objects and primitive string values.
+• Primitives and strings returned from String calls are primitive strings.
+• Primitives are treated as source code, while String objects are treated as all other objects.
 
+**Event Handlesrs**
+On-Event Handlers in DOM Elements
 
+• On-event handlers are properties offered by DOM elements to manage how elements react to events.
+• Elements can be interactive or non-interactive, and events include actions like clicking, detecting keys, and getting focus.
+• An on-event handler can be specified using an HTML attribute or a property from JavaScript.
+• Each object can have only one on-event handler for a given event, but can call multiple sub-handlers.
+• On-event handlers are called automatically, not at the programmer's will.
 
+Event Handler Parameters and Return Value
 
+• When an event handler is specified as an HTML attribute, it is wrapped into a function with parameters like event, source, lineno, colno, and error.
+• The event parameter contains the error message as a string.
+• The event handler's keyword is set to the DOM element on which it is registered.
+• The return value determines if the event is cancelled.
 
+Event Listener and Event Handler
 
+• Event listener refers to a function or object registered via EventTarget.addEventListener(), while event handler refers to a function registered via on... attributes or properties.
+• The EventTarget method addEventListener() sets up a function to be called when the specified event is delivered to the target.
 
+**Date Objects**
 
+JavaScript's Date Object Overview
+• Built-in object in JavaScript for storing date and time.
+• Provides methods for formatting and managing data.
+• Defaults to create an object corresponding to the current date and time.
+• Demonstrates Date by assigning the current date to a variable.
+• Example: Wednesday, October 18th in London (GMT).
 
+The date and time is broken up and printed in a way that we can understand as humans.  
+JavaScript, however, understands the date based on a timestamp derived from Unix time, which is a value consisting of the number 
+of milliseconds that have passed since midnight on January 1st, 1970. We can get the timestamp with the getTime() method. 
+
+**Epoch Time in JavaScript
+**
+• Epoch time, or zero time, is represented by the date string 01 January, 1970 00:00:00 UTC and the 0 timestamp.
+• It was chosen as a standard for measuring time in programming and is used in JavaScript.
+• Understanding both timestamp and date string is crucial as they can be used depending on an application's settings and purpose.
+• Four formats can be used to create a new Date in JavaScript: current time default, timestamp, date string, or specifying specific dates and times.
+
+**Date Creation**
+1. new Date(): Current date and time  
+2. new Date(timestamp): Creates date based on milliseconds since Epoch time  
+3. new Date(date string): Creates date based on date string 
+4. new Date(year, month, day, hours, minutes, seconds, milliseconds): Creates date based on specified date and time  
+
+Date and Time Method Overview
+• Sets seconds and milliseconds to 0.
+• Defaults to 0 for missing numbers in Date creation.
+• Order cannot be changed.
+• July month represented by 6, not 7.
+• Date and time numbers start from 0.
+
+Retrieving the Date with get  
+Once we have a date, we can access all the components of the date with various built-in methods. The methods will return each part of the date relative to the 
+local timezone. Each of these methods starts with get, and will return the relative number. Below is a detailed table of the get methods of the Date object. 
+
+Date Modification with Set Methods
+• Set methods are used to modify components of a date, similar to get methods.
+• These methods can be used to change one, more, or all components of a date.
+• For example, changing the year of a birthday variable to 1997 can be done.
+
+Date Methods with UTC
+• UTC methods are similar to get methods but calculate time based on the Coordinated Universal Time (UTC) standard.
+• UTC provides an international time standard reference, ensuring code consistency across timezones.
+
+Adding and Subtracting from a Given Date
+• Date setters expect an interval-appropriate value, but day values outside this range are rolled over into the next/preceding month(s).
 
 
 
