@@ -481,22 +481,110 @@ Date Methods with UTC
 Adding and Subtracting from a Given Date
 • Date setters expect an interval-appropriate value, but day values outside this range are rolled over into the next/preceding month(s).
 
+**Keyboard Events**
+Keydown, Keyup, and Keypress Events Overview
+
+Keydown Event:
+• User presses down a key on the keyboard.
+• Handled with the onkeydown event handler.
+• An alert message is displayed when the keydown event occurs.
+
+Keyup Event:
+• User releases a key on the keyboard.
+• Handled with the onkeyup event handler.
+• An alert message is displayed when the keyup event occurs.
+
+Keypress Event:
+• User presses down a key with a character value.
+• Handled with the onkeypress event handler.
+
+**Form Events**
+
+Web Page Event Handling Overview
+• Focus Event: Handles user's focus on an element on a web page.
+• Blur Event: Handles user's shift of focus from a form element or window.
+• Change Event: Handles user's alteration of form element value.
+• Submit Event: Handles user's submission of a form on a web page.
+• Alerts: Shown during form submission to the server.
+
+Documents and Window Events
+
+Web Page Load and Unload Events Overview
+• Load Event: Handles when a web page finishes loading.
+• Unload Event: Handles when a user leaves the current page.
+• Resize Event: Handles when a user resizes the browser window.
+• Onresize Event: Handles when the browser window is minimized or maximized.
+• Alerts: Shown when the browser window is resized to a new width and height.
+
+**Program Flowchart**
+
+Flowchart symbols are standardized shapes used to represent different types of actions or steps in a process. Here's a brief overview of common symbols:
+- **Oval**: Represents the start or end of a process.
+- **Rectangle**: Denotes a process or operation, like a function in JavaScript.
+- **Diamond**: Used for decision-making, similar to `if` statements in JavaScript.
+- **Parallelogram**: Indicates input/output operations, such as `prompt()` or `alert()` in JavaScript.
+- **Arrow**: Shows the flow direction between steps.
 
 
+JavaScript forloops
 
+JavaScript Loops and Their Uses
 
+Loops in JavaScript
+• Loops execute a block of code multiple times, allowing for repeated execution with different values.
+• They are useful when working with arrays, such as when writing:
 
+var i;
+`• for (i = 0; i < cars.length; i++) {
+    text += cars[i] + "
+";
+}`
 
+Different Kinds of Loops
+• For loops through a block of code a number of times.
+• For/in loops through the properties of an object.
+• For/of loops through the values of an iterable object.
+• While loops through a block of code while a specified condition is true.
 
+For Loop Syntax
+• For loop has the following syntax:
+    - Statement 1 is executed before the code block execution.
+    - Statement 2 defines the condition for executing the code block.
+    - Statement 3 increases a value each time the code block in the loop is executed.
 
+Statement 1
+• Statement 1 is usually used to initialize the variable used in the loop.
+• Statement 2 evaluates the condition of the initial variable.
+• Statement 3 increments the value of the initial variable.
 
+**Image and Video Optimisation**
 
+Optimizing Web Images for Performance
 
+• Beginner web-developer initially overlooked the impact of high-quality images on page load time.
+• Optimizing images involved compressing them using Optimizilla, a user-friendly website.
+• The compression resulted in a 70% size decrease for some resources, enhancing load times.
+• Other options include ImageOptim for Mac or FileOptimizer for Windows, and Gulp and WebPack plugins for build tools.
+• The performance gains are worth the effort, regardless of the compression method.
+• File format should be considered, with png being smaller and jpg being preferred for transparency.
+• Google's webp format is promising but not yet supported on all browsers.
+• Further optimization can be achieved through further optimization.
 
+Search Engine Optimization
 
+Search Engine Basics
 
-
-
+• Search engines are answer machines that scour billions of pieces of content.
+• They discover and catalog all available content via "crawling and indexing" and order it by how well it matches the query in "ranking."
+• Organic search results are earned through effective SEO, not paid for.
+• SERPs are filled with more advertising and dynamic organic results formats (SERP features).
+• SERP features include featured snippets, People Also Ask boxes, image carousels, etc.
+• Search engines make money from advertising to better solve searcher’s queries, keep searchers coming back, and keep them on the SERPs longer.
+• Some SERP features on Google are organic and can be influenced by SEO.
+• SEO is important as organic search results cover more digital real estate, appear more credible to savvy searchers, and receive way more clicks than paid advertisements.
+• SEO has ~20X more traffic opportunity than PPC on both mobile and desktop.
+• SEO is one of the only online marketing channels that can continue to pay dividends over time.
+• Optimizing your site helps deliver better information to search engines for proper indexing and display within search results.
 
 
 
